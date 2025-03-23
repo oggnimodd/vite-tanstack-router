@@ -10,7 +10,8 @@
 		"lint": "biome check .",
 		"lint:apply": "biome check --write .",
 		"format": "biome format .",
-		"format:fix": "biome format --write ."
+		"format:fix": "biome format --write .",
+		"aider:commit": "aider --commit --model gemini/gemini-2.0-flash-exp"
 	},
 	"dependencies": {
 		"@radix-ui/react-dropdown-menu": "^2.1.6",
