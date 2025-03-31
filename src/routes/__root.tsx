@@ -11,9 +11,33 @@ export const Route = createRootRoute({
 			<Toaster />
 			<div className="p-2 flex items-center justify-between">
 				<div className="flex gap-2">
-					<Link to="/" className="px-2">Home</Link>
-					<Link to="/about" className="px-2">About</Link>
-					<Link to="/user" className="px-2">Users</Link>
+					<Link
+						activeProps={{
+							className: "text-blue-500",
+						}}
+						to="/"
+						className="px-2"
+					>
+						Home
+					</Link>
+					<Link
+						activeProps={{
+							className: "text-blue-500",
+						}}
+						to="/about"
+						className="px-2"
+					>
+						About
+					</Link>
+					<Link
+						activeProps={{
+							className: "text-blue-500",
+						}}
+						to="/user"
+						className="px-2"
+					>
+						Users
+					</Link>
 				</div>
 				{/* Mode toggle */}
 				<ModeToggle />
