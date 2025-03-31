@@ -3,14 +3,18 @@ import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Toaster } from "@/components/ui/sonner";
+import NotFound from "@/components/not-found";
 
 export const Route = createRootRoute({
 	component: () => (
 		<ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
 			<Toaster />
-			<div className="p-2 flex gap-2">
-				<Link to="/">Home</Link>
-				<Link to="/about">About</Link>
+			<div className="p-2 flex items-center justify-between">
+				<div className="flex gap-2">
+					<Link to="/" className="px-2">Home</Link>
+					<Link to="/about" className="px-2">About</Link>
+					<Link to="/user" className="px-2">Users</Link>
+				</div>
 				{/* Mode toggle */}
 				<ModeToggle />
 			</div>
@@ -19,4 +23,5 @@ export const Route = createRootRoute({
 			<TanStackRouterDevtools />
 		</ThemeProvider>
 	),
+	notFoundComponent: NotFound,
 });

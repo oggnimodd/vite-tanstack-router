@@ -27,7 +27,7 @@ const dummyData = [
 		title: "Card Title 1",
 		description:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		image: "https://picsum.photos/id/10/200/300",
+		image: "https://picsum.photos/id/1/200/300",
 	},
 	{
 		title: "Card Title 2",

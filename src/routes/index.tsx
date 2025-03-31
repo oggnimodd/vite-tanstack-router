@@ -12,10 +12,10 @@ function Index() {
 			<Button
 				className="mt-4"
 				onClick={() => {
-					toast.error("Hello");
+					toast.error("Test");
 				}}
 			>
-				Hello
+				Hello World
 			</Button>
 		</div>
 	);
