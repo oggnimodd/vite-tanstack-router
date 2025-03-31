@@ -28,7 +28,8 @@
         "useImportType": "off"
       },
       "a11y": {
-        "useButtonType": "off"
+        "useButtonType": "off",
+        "noSvgWithoutTitle": "off"
       }
     },
     "ignore": [
